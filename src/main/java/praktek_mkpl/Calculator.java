@@ -1,22 +1,31 @@
 package praktek_mkpl;
 
 public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
+    // Method untuk menambah
+    public int add(int angkaSatu, int angkaDua) {
+        // Mengembalikan hasil penjumlahan
+        return angkaSatu + angkaDua; // Comments
     }
 
-    public int subtract(int a, int b) {
-        return a - b;
+    // Method untuk mengurangi
+    public int subtract(int number1, int number2) {
+        // Mengembalikan hasil pengurangan
+        return number1 - number2; // Comments
     }
 
-    public int multiply(int a, int b) {
-        return a * b;
+    // Method untuk mengalikan
+    public int multiply(int firstNumber, int secondNumber) {
+        // Mengembalikan hasil perkalian
+        return firstNumber * secondNumber; // Comments
     }
 
-    public int divide(int a, int b) {
-        if (b == 0) {
-            throw new IllegalArgumentException("Division by zero");
+    // Method untuk membagi
+    public int divide(int dividend, int divisor) {
+        // Memeriksa apakah pembagi adalah nol
+        if (divisor == 0) {
+            throw new IllegalArgumentException("Division by zero"); // Feature Envy
         }
-        return a / b;
+        // Mengembalikan hasil pembagian
+        return dividend / divisor; // Comments
     }
 }
